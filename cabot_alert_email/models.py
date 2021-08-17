@@ -4,7 +4,7 @@ from django.conf import settings
 from django.core.mail import send_mail
 from django.template import Context, Template
 
-from cabot.cabotapp.alert import AlertPlugin
+from cabot3.cabotapp.alert import AlertPlugin
 
 
 email_template = """Service {{ service.name }} {{ scheme }}://{{ host }}{% url 'service' pk=service.id %} {% if service.overall_status != service.PASSING_STATUS %}alerting with status: {{ service.overall_status }}{% else %}is back to normal{% endif %}.

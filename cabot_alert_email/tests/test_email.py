@@ -1,8 +1,8 @@
 from mock import patch
 
-from cabot.cabotapp.alert import update_alert_plugins
-from cabot.cabotapp.models import Service, UserProfile
-from cabot.cabotapp.tests.tests_basic import LocalTestCase
+from cabot3.cabotapp.alert import update_alert_plugins
+from cabot3.cabotapp.models import Service, UserProfile
+from cabot3.cabotapp.tests.tests_basic import LocalTestCase
 
 from cabot_alert_email import models
 
